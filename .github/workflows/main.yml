@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Hello env vars
+        run: echo $VARIABLE_NAME1 $VARIABLE_NAME2
+        env:
+          VARIABLE_NAME1: "variable 1"
+          VARIABLE_NAME2: "variable 2"
